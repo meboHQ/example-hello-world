@@ -1,0 +1,17 @@
+{
+  "name": "example-hello-world",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meboHQ/example-hello-world.git"
+  },
+  "author": "Paulo Nogueira <paulondc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mebo": "*"
+  }
+}
