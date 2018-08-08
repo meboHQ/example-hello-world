@@ -15,4 +15,4 @@ class MyAction extends Mebo.Action{
 }
 
 // registering action
-Mebo.registerAction(MyAction);
+Mebo.Action.register(MyAction, "myAction");

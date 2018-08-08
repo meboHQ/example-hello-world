@@ -2,7 +2,7 @@ const Mebo = require('mebo');
 
 
 // creating the action
-const action = Mebo.createAction('myAction');
+const action = Mebo.Action.create('myAction');
 
 // setting a message
 action.input('message').setValue('Hello World!');
@@ -16,7 +16,7 @@ action.input('message').setValue('Hello World!');
 // action.input('repeat').setValue('2');
 
 // executing action
-action.execute().then((result) => {
+action.run().then((result) => {
   console.log(result);
 
 }).catch((err) => {
