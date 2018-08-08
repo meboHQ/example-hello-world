@@ -6,7 +6,7 @@
 This example prints out Hello World
 
 ## Requirements
-- Node 6 or greater
+- Node 8 or greater
 
 ## Running example:
 ```
