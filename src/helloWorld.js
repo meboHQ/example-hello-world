@@ -8,7 +8,7 @@ const action = Mebo.Action.create('myAction');
 action.input('message').setValue('Hello World!');
 
 /*
- * uncomment the line bellow to test the validations.
+ * uncomment the line below to test the validations.
  * That should produce an error when executing the action,
  * since the 'repeat' input excepts a number, to fix the
  * error just assign a numeric value instead.
