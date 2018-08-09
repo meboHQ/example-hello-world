@@ -13,7 +13,7 @@ This example prints out Hello World
 git clone https://github.com/meboHQ/example-hello-world.git
 cd example-hello-world
 npm install
-node .
+NODE_ENV=development node .
 ```
 
 ## Licensing
