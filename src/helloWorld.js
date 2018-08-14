@@ -1,7 +1,24 @@
+// importing mebo
 const Mebo = require('mebo');
 
+// implementing an action that is going to print the input message
+// by the number of times specified by repeat
+@Mebo.register('myAction')
+class MyAction extends Mebo.Action{
+  constructor(){
+    super();
+    this.createInput('message: text');
+    this.createInput('repeat: numeric', {defaultValue: 10});
+  }
 
-// creating the action
+  _perform(data){
+    const result = data.message.repeat(data.repeat);
+    return Promise.resolve(result);
+  }
+}
+
+
+// creating instance of the action
 const action = Mebo.Action.create('myAction');
 
 // setting a message

@@ -1,5 +1,5 @@
-// registering action
-require('./MyAction');
+// this example uses es6/es7 spec to make things easier to play with.
+// In a production environment please consider transpiling beforehand
+require('babel-register');
 
-// loading hello World
-require('./helloWorld');
+require('./helloWorld.js');
