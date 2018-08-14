@@ -1,8 +1,8 @@
 // importing mebo
 const Mebo = require('mebo');
 
-// implementing an action that is going to print the input message
-// by the number of times specified by repeat
+// implementing/registering an action that is going to print the
+// input message by the number of times specified by repeat
 @Mebo.register('myAction')
 class MyAction extends Mebo.Action{
   constructor(){
@@ -16,7 +16,6 @@ class MyAction extends Mebo.Action{
     return Promise.resolve(result);
   }
 }
-
 
 // creating instance of the action
 const action = Mebo.Action.create('myAction');
