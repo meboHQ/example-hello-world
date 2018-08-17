@@ -20,9 +20,9 @@ if (require.main === module && process.argv.includes('--cli')) {
 }
 // Web support:
 // node .
-// curl http://localhost:8080/hello
-// curl http://localhost:8080/hello?message=Ola%20Mundo
-// curl http://localhost:8080/hello?message=Ola%20Mundo&repeat=5
+// http://localhost:8080/hello
+// http://localhost:8080/hello?message=Ola%20Mundo
+// http://localhost:8080/hello?message=Ola%20Mundo&repeat=5
 else {
   // creating an express app
   const app = express();
