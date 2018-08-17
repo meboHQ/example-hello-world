@@ -7,18 +7,22 @@ require('babel-register');
 
 require('./Hello.js');
 
-// command-line support:
+// Command-line support:
 // node . --cli hello --help
-if (require.main === module && process.argv.includes('--cli')) {// executing cli
+// node . --cli hello "Ola Mundo!"
+// node . --cli hello "Ola Mundo!" --repeat 5
+if (require.main === module && process.argv.includes('--cli')) {
   const actionName = process.argv[process.argv.indexOf('--cli')];
 
   // creating a command-line handler which is used to load the command-line
   // arguments to the action, execute the action and to output the result back to the console
   Mebo.Handler.get('cli').init(actionName);
-
-// web support:
-// http://localhost:8080/hello?message=Hello%20World&repeat=5
 }
+// Web support:
+// node .
+// curl http://localhost:8080/hello
+// curl http://localhost:8080/hello?message=Ola%20Mundo
+// curl http://localhost:8080/hello?message=Ola%20Mundo&repeat=5
 else {
   // creating an express app
   const app = express();
