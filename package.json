@@ -21,7 +21,8 @@
   "author": "Paulo Nogueira <paulondc@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "mebo": "*"
+    "mebo": "*",
+    "express": "*"
   },
   "devDependencies": {
     "babel-plugin-transform-decorators-legacy": "*",
