@@ -16,7 +16,7 @@ npm install
 ```
 
 #### Command-line
-Running through the command-line
+Running through the command-line:
 
 ```bash
 node . --cli hello --help
@@ -25,7 +25,7 @@ node . --cli hello "Ola Mundo!" --repeat 5
 ```
 
 #### Web
-Running through the web
+Running through the web:
 
 ```bash
 node .
