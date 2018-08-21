@@ -12,11 +12,8 @@ require('./Hello.js');
 // node . --cli hello "Ola Mundo!"
 // node . --cli hello "Ola Mundo!" --repeat 5
 if (require.main === module && process.argv.includes('--cli')) {
-  const actionName = process.argv[process.argv.indexOf('--cli')];
-
-  // creating a command-line handler which is used to load the command-line
-  // arguments to the action, execute the action and to output the result back to the console
-  Mebo.Handler.get('cli').init(actionName);
+  // initializing the cli support
+  Mebo.Handler.get('cli').init();
 }
 // Web support:
 // node .
