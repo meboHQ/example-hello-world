@@ -19,9 +19,10 @@ npm install
 Running through the command-line:
 
 ```bash
-node . --cli hello --help
-node . --cli hello "Ola Mundo!"
-node . --cli hello "Ola Mundo!" --repeat 5 
+node . --help
+node . hello --help
+node . hello "Ola Mundo!"
+node . hello --repeat=5 "Ola Mundo!"
 ```
 
 #### Web
