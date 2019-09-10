@@ -33,6 +33,7 @@ node .
 ```
 
 ```
+GET: http://localhost:8080/hello?help
 GET: http://localhost:8080/hello
 GET: http://localhost:8080/hello?message=Ola%20Mundo
 GET: http://localhost:8080/hello?message=Ola%20Mundo&repeat=5
